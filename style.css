@@ -150,12 +150,13 @@ nav ul li a:hover{
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 100%;
 
   }
 
   #logo_footer {
     display: contents;
+
   }
 
 #logo_footer h2 {
