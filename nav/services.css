@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000714;
+    color: darkgray;
+}
+
+#encabezado {
+    display: flex;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 50px;
+}
+
+#titulo {
+    margin-top: 100px;
+}
+
+.navegacion {
+    list-style: none;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 40%;
+    gap: 170px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: darkgray;
+    transition: 0.3s;
+    font-size: 20px;
+    
+}
+
+.enlaces a:hover{
+    color: aqua;
+}
+
+#container_full {
+    background-color: #111A29;
+    display: inline-block;
+}
