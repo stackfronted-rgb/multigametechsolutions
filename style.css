@@ -34,16 +34,17 @@ nav ul {
 
 
 nav ul li a {
+    padding: 10px;
     text-decoration: none;
     color: darkgray;
     transition: 0.5s;
     size: 30px;
     font-size: 20px;
+    border-radius: 5px;
     
 }
 nav ul li a:hover{
-    color: rgb(0, 255, 255);
-    text-shadow: 5rem rem 5rem 0.05rem rgba(0, 247, 247, 0.4);
+    background-color: rgba(36,123,255,0.149);
 }
 
 #contenedor {

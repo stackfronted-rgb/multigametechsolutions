@@ -30,18 +30,46 @@ body{
 }
 
 .enlaces a {
+    padding: 10px;
     text-decoration: none;
     color: darkgray;
     transition: 0.3s;
     font-size: 20px;
+    border-radius: 5px;
+    -o-transition: 0.3s;
     
 }
 
 .enlaces a:hover{
-    color: aqua;
+    background-color: rgba(36,123,255,0.149);
+
+    
 }
 
 #container_full {
     background-color: #111A29;
     display: inline-block;
+    width: 100%;
+
+}
+
+.subtema {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.texto {
+    text-align: center;
+    width: 600px;
+    letter-spacing: 0.05rem;
+    font-size: 20px;
+}
+
+.ilustration {
+    width: 600px;
+    border-radius: 30px;
+    box-shadow: 0rem 0rem 5rem 0.5rem rgba(36,123,255,0.149);
 }
