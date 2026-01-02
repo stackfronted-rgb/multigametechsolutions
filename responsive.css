@@ -188,7 +188,7 @@ nav ul li a:hover{
 }
 
 @media (max-width : 1280px) {
-
+      body {
     background-color: #000714;
     margin: 0;
     padding: 0;
@@ -373,3 +373,4 @@ nav ul li a:hover{
     margin-left: 15%;
 }
 
+}
