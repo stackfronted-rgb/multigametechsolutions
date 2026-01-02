@@ -56,7 +56,7 @@ nav ul li a:hover{
 
 }
 
-#container_1{
+.container_1{
     display: flex;
     text-align: center;
     margin-left: 50%; 
@@ -72,6 +72,7 @@ nav ul li a:hover{
 
 .texto {
     display: inline-block;
+    padding: 1rem;
     letter-spacing: 0.05rem;
     width: 500px;
     font-size: 20px;
@@ -83,7 +84,6 @@ nav ul li a:hover{
 .container_win {
     width: 600px;
     display: inline-block;
-    vertical-align: top;
     border-radius: 30px;
     box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
 }
@@ -146,9 +146,8 @@ nav ul li a:hover{
     background-color: #151b23;
     display: flex;
     box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    gap: 20px;
 
   }
 
@@ -157,25 +156,28 @@ nav ul li a:hover{
 
   }
 
-#logo_footer h2 {
-    margin-top: 210px;
-}
+
 
 #logo_footer a img {
-    width: 200px;
-     margin-top: 90px;
+    width: 100px;
+     margin-top: 100px;
 
   }
 
+.name_buisnes {
+  margin-top: 12%;
+}
+
 .lista_redes {
-    margin-top: 200px;
+  margin-left: 100%;
+    margin-top: 80%;
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
 .copy {
-    margin-top: 200px;
-    margin-left: 10px;
+    margin-top: 12%;
+    margin-left: 15%;
 }
 
