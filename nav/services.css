@@ -13,6 +13,7 @@ body{
     display: flex;
 }
 
+
 .logo {
     width: 150px;
     margin-left: 50px;
@@ -22,12 +23,20 @@ body{
     margin-top: 100px;
 }
 
+.nav_label {
+    display: none;
+}
+
+.nav_input {
+    display: none;
+}
+
 .navegacion {
     list-style: none;
     display: flex;
     margin-top: 100px;
     margin-left: 40%;
-    gap: 170px;
+    gap: 80px;
 }
 
 .enlaces a {
