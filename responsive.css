@@ -1,567 +1,119 @@
-@media (max-width : 1366px) {
-    body {
-    background-color: #000714;
-    margin: 0;
-    padding: 0;
-    color: darkgrey;
-}
-
-header {
+@media (max-width:375px) {
+  header {
+    display: block;
     text-align: center;
-    border: darkgrey;
-    padding: 20px;
-}
+    padding: 5px;
+  }
 
-.logo {
-    width: 400px;
+  .logo {
+    width: 170px;
     border-radius: 50%;
     box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
+  }
 
-
-
-}
-.Titulo {
+ .Titulo {
     color: darkgrey;
-}
+    font-size: 12px;
+  } 
+  nav .boton_menu{
+  display: block;
+  padding: 0px;
+  }
 
-nav .boton_menu  {
-    display: none;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    list-style: none;
-    gap: 10%;
-}
+  nav ul {
+    text-align: center;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #2e3c50;
+    left: -120%;
+    transition: all 0.3s;
 
 
-nav ul li a {
-    padding: 10px;
-    text-decoration: none;
-    color: darkgray;
-    transition: 0.5s;
-    size: 30px;
-    font-size: 20px;
-    border-radius: 5px;
-    
-}
-nav ul li a:hover{
-    background-color: rgba(36,123,255,0.149);
-}
+  }
 
-#contenedor {
+  nav ul li {
+    line-height: 30px;
+  }
+  #active_menu:checked ~ ul {
+    left: -10%;
+  }
+
+  #contenedor {
     display: block;
     text-align: center;
     box-sizing: border-box;
     padding-top: 5%;
     padding-bottom: 5%;
 
-}
+  }
 
-.container_1{
-    display: flex;
+  .texto {
     text-align: center;
-    margin-left: 50%; 
-    gap: 20%;
-    width: 1000px;
-    height: 1000px;
-    box-sizing: border-box;
-}
+    font-size: 11px;
+    width: fit-content;
+    margin-left: 15%;
+  }
 
-
-
-
-
-.texto {
-    display: inline-block;
-    padding: 1rem;
-    letter-spacing: 0.05rem;
-    width: 500px;
-    font-size: 20px;
-    margin-right: 15%;
-    text-align: center;
-    
-}
-
-.container_win {
-    width: 600px;
+  .container_win {
+    width: 300px;
     display: inline-block;
     border-radius: 30px;
     box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
-}
+ }
 
-
-#gaming {
+  #gaming {
     text-align: center;
     background-color: #111A29;
-}
+ }
 
-#gaming p {
+
+ #gaming p {
     display: inline-block;
     letter-spacing: 0.05rem;
-    font-size: 20px;
+    font-size: 11px;
+
+ }
+ .card {
+  width: 100px;
+  min-height: 100px;
+ }
+ .group {
+  gap: 10px;
+ }
+ 
+#logo_footer {
+  display: block;
+}
+
+ #logo_footer a img {
+  margin-left: 11px;
+  width: 50px;
+ }
+
+ .name_buisnes{
+  font-size: 8px;
+  display: block;
+  margin-top: 160px;
+  margin-left: -80px;
+ }
+
+ .lista_redes {
+  margin-left: -50px;
+  margin-top: 160px;
+ }
+
+
+ .social .lista_redes .list_container a img {
+  width: 24px;
+ }
+
+ .copy  {
+  margin-left: 10px;
+  font-size: 8px;
+  margin-top: 160px;
+ }
 
 }
 
-.carrusel {
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex: 0 0 100%;
-    &:hover .group {
-    animation-play-state: paused;
-  }
-}
-  .card {
-    width: 200px;
-    color: white;
-    border-radius: 24px;
-   /* box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;*/
-    font-size: xx-large;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    box-shadow: 0rem 0rem 2rem 0rem rgba(71,108,167, 20%);
-
-  }
-
-.group {
-    display: flex;
-    gap: 30px;
-    /* Add padding to the right to create a gap between the last and first card. */
-    padding-right: 20px;
-     animation: scrolling 40s linear infinite;
-  }
-
-@keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  #footer {
-    background-color: #151b23;
-    display: flex;
-    box-sizing: border-box;
-    height: 100%;
-    gap: 20px;
-
-  }
-
-  #logo_footer {
-    display: contents;
-
-  }
-
-
-
-#logo_footer a img {
-    width: 100px;
-     margin-top: 100px;
-
-  }
-
-.name_buisnes {
-  margin-top: 12%;
-}
-
-.lista_redes {
-  margin-left: 100%;
-    margin-top: 80%;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.copy {
-    margin-top: 12%;
-    margin-left: 15%;
-}
-
-
-}
-
-@media (max-width : 1280px) {
-      body {
-    background-color: #000714;
-    margin: 0;
-    padding: 0;
-    color: darkgrey;
-}
-
-header {
-    text-align: center;
-    border: darkgrey;
-    padding: 20px;
-}
-
-.logo {
-    width: 400px;
-    border-radius: 50%;
-    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
-
-
-
-}
-.Titulo {
-    color: darkgrey;
-}
-
-nav .boton_menu  {
-    display: none;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    list-style: none;
-    gap: 10%;
-}
-
-
-nav ul li a {
-    padding: 10px;
-    text-decoration: none;
-    color: darkgray;
-    transition: 0.5s;
-    size: 30px;
-    font-size: 20px;
-    border-radius: 5px;
-    
-}
-nav ul li a:hover{
-    background-color: rgba(36,123,255,0.149);
-}
-
-#contenedor {
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-}
-
-.container_1{
-    display: flex;
-    text-align: center;
-    margin-left: 50%; 
-    gap: 20%;
-    width: 1000px;
-    height: 1000px;
-    box-sizing: border-box;
-}
-
-
-
-
-
-.texto {
-    display: inline-block;
-    padding: 1rem;
-    letter-spacing: 0.02rem;
-    width: 500px;
-    font-size: 20px;
-    margin-right: 15%;
-    text-align: center;
-    
-}
-
-.container_win {
-    width: 500px;
-    display: inline-block;
-    border-radius: 30px;
-    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
-}
-
-
-#gaming {
-    text-align: center;
-    background-color: #111A29;
-}
-
-#gaming p {
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-size: 20px;
-
-}
-
-.carrusel {
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex: 0 0 100%;
-    &:hover .group {
-    animation-play-state: paused;
-  }
-}
-  .card {
-    width: 200px;
-    color: white;
-    border-radius: 24px;
-   /* box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;*/
-    font-size: xx-large;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    box-shadow: 0rem 0rem 2rem 0rem rgba(71,108,167, 20%);
-
-  }
-
-.group {
-    display: flex;
-    gap: 30px;
-    /* Add padding to the right to create a gap between the last and first card. */
-    padding-right: 20px;
-     animation: scrolling 40s linear infinite;
-  }
-
-@keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  #footer {
-    background-color: #151b23;
-    display: flex;
-    box-sizing: border-box;
-    height: 100%;
-    gap: 20px;
-
-  }
-
-  #logo_footer {
-    display: contents;
-
-  }
-
-
-
-#logo_footer a img {
-    width: 100px;
-     margin-top: 100px;
-
-  }
-
-.name_buisnes {
-  margin-top: 12%;
-}
-
-.lista_redes {
-  margin-left: 100%;
-    margin-top: 80%;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.copy {
-    margin-top: 12%;
-    margin-left: 15%;
-}
-
-}
-
-@media (max-width : 800px) {
-        body {
-    background-color: #000714;
-    margin: 0;
-    padding: 0;
-    color: darkgrey;
-}
-
-header {
-    text-align: center;
-    border: darkgrey;
-    padding: 20px;
-}
-
-.logo {
-    width: 400px;
-    border-radius: 50%;
-    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
-
-
-
-}
-.Titulo {
-    color: darkgrey;
-}
-
-nav .boton_menu  {
-    display: none;
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    list-style: none;
-    gap: 10%;
-}
-
-
-nav ul li a {
-    padding: 10px;
-    text-decoration: none;
-    color: darkgray;
-    transition: 0.5s;
-    size: 30px;
-    font-size: 20px;
-    border-radius: 5px;
-    
-}
-nav ul li a:hover{
-    background-color: rgba(36,123,255,0.149);
-}
-
-#contenedor {
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-}
-
-.container_1{
-    display: flex;
-    text-align: center;
-    margin-left: 50%; 
-    gap: 20%;
-    width: 1000px;
-    height: 1000px;
-    box-sizing: border-box;
-}
-
-
-
-
-
-.texto {
-    display: block;
-    padding: 1rem;
-    letter-spacing: 0.02rem;
-    width: 500px;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 15%;
-    
-}
-
-.container_win {
-    width: 500px;
-    display: inline-block;
-    border-radius: 30px;
-    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
-}
-
-
-#gaming {
-    text-align: center;
-    background-color: #111A29;
-}
-
-#gaming p {
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-size: 20px;
-
-}
-
-.carrusel {
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex: 0 0 100%;
-    &:hover .group {
-    animation-play-state: paused;
-  }
-}
-  .card {
-    width: 200px;
-    color: white;
-    border-radius: 24px;
-   /* box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;*/
-    font-size: xx-large;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    box-shadow: 0rem 0rem 2rem 0rem rgba(71,108,167, 20%);
-
-  }
-
-.group {
-    display: flex;
-    gap: 30px;
-    /* Add padding to the right to create a gap between the last and first card. */
-    padding-right: 20px;
-     animation: scrolling 40s linear infinite;
-  }
-
-@keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-  #footer {
-    background-color: #151b23;
-    display: flex;
-    box-sizing: border-box;
-    height: 100%;
-    gap: 20px;
-
-  }
-
-  #logo_footer {
-    display: contents;
-
-  }
-
-
-
-#logo_footer a img {
-    width: 80px;
-     margin-top: 100px;
-
-  }
-
-.name_buisnes {
-  margin-top: 20%;
-  font-size: 12px;
-}
-
-.lista_redes {
-  margin-left: 60%;
-    margin-top: 80%;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-
-
-.copy {
-    margin-top: 20%;
-    margin-left: 15%;
-    font-size: 10px;
-}
-}
