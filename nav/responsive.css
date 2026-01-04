@@ -1,34 +1,87 @@
-@media (max-width:430px) {
-    header {
-        display: block;
-        width: 100%;
+@media (max-width:768px) {
+    *{
+        box-sizing: border-box;
     }
 
-    .logo  {
-        width: 100px;
-        margin-left: 20px;
+    .logo {
+        width: 150px;
+        
     }
+
     #titulo {
+        display: block;
 
-        display: none;
     }
 
     .nav_label {
         display: block;
-        margin-left: 190%;
     }
 
     .navegacion {
-        display: block;
-        text-align: center;
         position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
         background-color: #2e3c50;
-        transition: all 0.3s;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px 0px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        margin: 0;
+
+    }
+
+
+
+    .enlaces a {
+        font-size: 18px;
+        display: block;
+    }
+
+    .nav_input:checked ~.navegacion {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .nav_input:checked ~ .menu_overlay {
+        display: block;
+    }
+
+    .menu_overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        left: 60px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
     }
-    .nav_input:checked ~ ul {
-        left: -200px;
+
+    .container_full{
+        display: block;
     }
+
+    .subtema {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    .texto {
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .ilustration {
+        width: 300px;
+        border-radius: 30px;
+        box-shadow: 0rem 0rem 5rem 0.5rem rgba(36,123,255,0.149);
+    }
+
+
+
 }
