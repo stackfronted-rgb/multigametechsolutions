@@ -35,9 +35,10 @@
 
   nav ul li {
     line-height: 30px;
+    padding: 20px 0px 0px ;
   }
   #active_menu:checked ~ ul {
-    left: -10%;
+    left: -11%;
   }
 
   #contenedor {
@@ -51,9 +52,9 @@
 
   .texto {
     text-align: center;
-    font-size: 11px;
-    width: fit-content;
-    margin-left: 15%;
+    font-size: 14px;
+    width: 100%;
+
   }
 
   .container_win {
