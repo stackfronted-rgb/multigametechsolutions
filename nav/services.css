@@ -83,3 +83,45 @@ body{
     border-radius: 30px;
     box-shadow: 0rem 0rem 5rem 0.5rem rgba(36,123,255,0.149);
 }
+
+
+  #footer {
+    background-color: #151b23;
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+
+  }
+
+  #logo_footer {
+    display: contents;
+
+  }
+
+
+
+#logo_footer a img {
+    width: 100px;
+     margin-top: 100px;
+
+  }
+
+.name_buisnes {
+  margin-top: 12%;
+}
+
+.lista_redes {
+  margin-left: 100%;
+    margin-top: 90%;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.copy {
+    margin-top: 12%;
+    margin-left: 15%;
+    font-size: 12px;
+}

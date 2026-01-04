@@ -82,6 +82,37 @@
         box-shadow: 0rem 0rem 5rem 0.5rem rgba(36,123,255,0.149);
     }
 
+    #logo_footer {
+  display: block;
+}
 
+ #logo_footer a img {
+  margin-left: 11px;
+  width: 50px;
+ }
+
+ .name_buisnes{
+  font-size: 8px;
+  display: block;
+  margin-top: 160px;
+  margin-left: -80px;
+ }
+
+ .lista_redes {
+  margin-left: -10px;
+  margin-top: 160px;
+ }
+
+
+ .social .lista_redes .list_container a img {
+  width: 24px;
+ }
+
+ .copy  {
+  margin-left: 10px;
+  font-size: 8px;
+  margin-top: 160px;
+ }
 
 }
+
