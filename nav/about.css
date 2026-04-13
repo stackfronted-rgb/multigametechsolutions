@@ -1,0 +1,25 @@
+body {
+    background-color: #000714;
+    margin: 0;
+    padding: 0;
+    color: darkgrey;
+}
+
+header {
+    text-align: center;
+    border: darkgrey;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
+
+
+
+}
+.Titulo {
+    color: darkgrey;
+    font-size: 20px;
+}

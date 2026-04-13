@@ -14,10 +14,7 @@ header {
 .logo {
     width: 400px;
     border-radius: 50%;
-    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
-
-
-
+    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4);
 }
 .Titulo {
     color: darkgrey;
