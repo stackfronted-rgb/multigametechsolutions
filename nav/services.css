@@ -25,6 +25,7 @@ body {
 #titulo {
   font-size: 1.2rem;
   color: darkgray;
+  margin-right: 40%;
 }
 
 /* ====== NAV ====== */
@@ -44,9 +45,8 @@ body {
 .navegacion {
     list-style: none;
     display: flex;
-    margin-top: 100px;
-    margin-left: 40%;
     gap: 80px;
+    font-size: 2rem;
 }
 
 .enlaces a {
@@ -75,13 +75,13 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+
 }
 
 .texto {
   text-align: center;
   max-width: 600px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .ilustration {
