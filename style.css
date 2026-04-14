@@ -76,6 +76,7 @@ nav ul li a:hover {
   max-width: 500px;
   font-size: 1rem;
   margin: auto;
+  gap: 2rem;
 }
 
 .container_win {
