@@ -74,10 +74,12 @@ nav ul li a:hover {
   padding: 1rem;
   width: 100%;
   max-width: 500px;
-  font-size: 1rem;
+  font-size: 18px;
   margin: auto;
-  gap: 2rem;
+  line-height: 20px;
+  letter-spacing: 2px;
 }
+
 
 .container_win {
   width: 100%;
@@ -97,6 +99,8 @@ nav ul li a:hover {
   max-width: 800px;
   margin: auto;
   font-size: 1rem;
+  line-height: 20px;
+  letter-spacing: 2px;
 }
 
 .carrusel {
