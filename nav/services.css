@@ -94,6 +94,10 @@ body {
   box-shadow: 0 0 5rem 0.5rem rgba(36,123,255,0.149);
 }
 
+#program {
+    width: 400px;
+}
+
 /* ====== FOOTER ====== */
 #footer {
   background-color: #151b23;
