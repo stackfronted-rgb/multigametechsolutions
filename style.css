@@ -98,6 +98,7 @@ nav ul li a:hover {
   text-align: center;
   background-color: #111A29;
   padding: 2rem;
+  width: 100%;
 }
 
 #gaming p {
@@ -135,10 +136,13 @@ nav ul li a:hover {
 
 /* ====== FOOTER ====== */
 #footer {
+  width: 100%;
   background-color: #151b23;
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
   color: darkgrey;
 }
@@ -150,6 +154,8 @@ nav ul li a:hover {
 .lista_redes {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   margin: 0;
 }
