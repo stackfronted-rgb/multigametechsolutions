@@ -45,16 +45,17 @@ body {
 .navegacion {
     list-style: none;
     display: flex;
-    gap: 80px;
+    gap: 60px;
     font-size: 2rem;
-    margin-right: 60px;
+    margin-right: 40px;
 }
 
 .enlaces a {
+  padding: 10px;
   text-decoration: none;
   color: darkgray;
   transition: 0.3s;
-  font-size: 1rem;
+  font-size: 18px;
   border-radius: 5px;
   letter-spacing: 2px;
 
