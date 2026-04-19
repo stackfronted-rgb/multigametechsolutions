@@ -68,6 +68,17 @@ nav ul li a:hover {
   background-color: rgba(36,123,255,0.149);
 }
 
+
+.anuncio {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-left: 20%;
+}
+
 footer {
   width: 100%;
   background-color: #151b23;
