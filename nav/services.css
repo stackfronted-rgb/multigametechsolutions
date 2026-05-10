@@ -46,11 +46,12 @@ img {
   cursor: pointer;
 }
 
-#activate_menu {
+#active_menu {
   display: none;
 }
 
 .navegacion {
+  width: 100%;
   list-style: none;
   display: flex;
   gap: 60px;
@@ -158,7 +159,7 @@ footer {
     max-height: 300px;
   }
 
-  nav .navegacion {
+  .navegacion {
     flex-direction: column;
     background-color: #111A29;
     margin-top: 1rem;
