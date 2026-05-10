@@ -41,16 +41,12 @@ img {
 }
 
 /* ====== NAV ====== */
-.nav_label {
+.boton_menu {
   display: none;
   cursor: pointer;
 }
 
-.nav_label img {
-  width: 40px;
-}
-
-.nav_input {
+#activate_menu {
   display: none;
 }
 
@@ -146,41 +142,39 @@ footer {
 
 /* ====== MEDIA QUERIES ====== */
 @media (max-width: 768px) {
-  /* Botón hamburguesa */
-  .nav_label {
+  /* Menú hamburguesa */
+  .boton_menu {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
   }
 
-  /* Menú oculto por defecto */
-  .navegacion {
+  nav {
+    max-height: 0;
+    width: 100%;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+  }
+
+  #active_menu:checked ~ nav {
+    max-height: 300px;
+  }
+
+  nav .navegacion {
     flex-direction: column;
     background-color: #111A29;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    margin: 0;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-    z-index: 1000;
-    gap: 0;
-  }
-
-  /* Menú visible */
-  .nav_input:checked ~ .navegacion {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .enlaces {
+    margin-top: 1rem;
+    gap: 1rem;
     text-align: center;
-    margin: 10px 0;
+    padding-bottom: 1rem;
+  }
+
+
+  .navegacion li {
+    width: 100%;
+  }
+
+  .navegacion a{
+        display: block;
+        padding: 0.5rem;
   }
 
   /* Ajustes del header */
