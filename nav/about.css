@@ -1,35 +1,46 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #000714;
-    margin: 0;
-    padding: 0;
-    color: darkgrey;
+  background-color: #000714;
+  margin: 0;
+  padding: 0;
+  color: darkgrey;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ====== HEADER ====== */
 header {
-    text-align: center;
-    border: darkgrey;
-    padding: 20px;
+  text-align: center;
+  border: darkgrey;
+  padding: 20px;
 }
 
 .logo {
-    width: 200px;
-    border-radius: 50%;
-    box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4)
-
-
-
+  width: min(200px, 70%);
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 5rem 0.5rem rgba(0, 247, 247, 0.4);
+  margin: 0 auto;
 }
+
 .Titulo {
-    color: darkgrey;
-    font-size: 20px;
+  color: darkgrey;
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
 }
 
+/* ====== NAV (Flexbox) ====== */
 nav {
   position: relative;
   padding: 1rem;
@@ -65,46 +76,53 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: rgba(36,123,255,0.149);
+  background-color: rgba(36, 123, 255, 0.149);
 }
 
-
+/* ====== ANUNCIO (texto) ====== */
 .anuncio {
   padding: 2rem;
   text-align: center;
-  font-size: 1rem;
-  line-height: 20px;
+  font-size: clamp(0.9rem, 4vw, 1rem);
+  line-height: 1.6;
   letter-spacing: 2px;
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* ====== UBICACIÓN con GRID ====== */
 .ubicacion {
-  align-items: center;
+  display: grid;
+  place-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .gps {
-width: 700px;
-align-content: center;
-border-radius: 20px;
-box-shadow: 0 0 5rem 0.5rem rgba(0, 247, 247, 0.4);
-transition: 0.3s;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 0 5rem 0.5rem rgba(0, 247, 247, 0.4);
+  transition: 0.3s;
 }
 
 .gps:hover {
   box-shadow: 0 0 5rem 0.5rem rgba(0, 255, 255, 0.838);
 }
 
+/* ====== FOOTER con GRID ====== */
 footer {
   width: 100%;
   background-color: #151b23;
-  display: inline-block;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 2rem;
   color: darkgrey;
+  gap: 1rem;
 }
 
 #logo_footer a img {
@@ -116,13 +134,97 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;}
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+}
 
 .copy {
   font-size: 0.8rem;
   text-align: center;
   width: 100%;
   margin-top: 1rem;
-  margin-right: 5%;
+}
 
+/* ====== MEDIA QUERIES (Responsive) ====== */
+@media (max-width: 768px) {
+  /* Menú hamburguesa */
+  nav .boton_menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: #111A29;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 1000;
+  }
+
+  #active_menu:checked ~ ul {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* Ajustes de texto y mapa */
+  .anuncio {
+    padding: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .gps {
+    max-width: 90%;
+  }
+
+  /* Footer en columna */
+  footer {
+    padding: 2rem 1rem;
+    gap: 0.8rem;
+  }
+
+  .lista_redes {
+    gap: 15px;
+  }
+
+  .copy {
+    font-size: 0.7rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .logo {
+    width: 60%;
+  }
+  .Titulo {
+    font-size: 1.2rem;
+  }
+  .anuncio {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+  .gps {
+    max-width: 95%;
+  }
+  #logo_footer a img {
+    width: 60px;
+  }
+  .lista_redes {
+    gap: 12px;
+  }
 }
